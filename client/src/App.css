@@ -1,4 +1,62 @@
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+    }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: green;
+    }
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    body {
+        background-color: white;
+    }
+}
+
+
+
+
+/* Color Palette */
+:root {
+    --bg-body: #6f6866;
+    --bg-non-body: #38302e;
+    --bg-panel: #ccdad1;
+    --bg-panel-header: #788585;
+
+    --text-dark-bg: #ffffff;
+    --text-light-bg: #ccdad1;
+
+    --hover-shadow: #9caea9;
+}
+
+/* General */
 body {
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Navbar */
+#navbar {
+    background-color: ;
 }
