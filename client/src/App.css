@@ -3,11 +3,19 @@
     body {
         background-color: red;
     }
+
+    #navbar {
+        height: 100px;
+    }
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
     body {
         background-color: yellow;
+    }
+
+    #navbar {
+        height: 100px;
     }
 }
 /* Media Query for Tablets Ipads portrait mode */
@@ -15,17 +23,29 @@
     body {
         background-color: blue;
     }
+
+    #navbar {
+        height: 100px;
+    }
 }
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px){
     body {
         background-color: green;
     }
+
+    #navbar {
+        height: 100px;
+    }
 }
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
     body {
         background-color: white;
+    }
+
+    #navbar {
+        height: 100px;
     }
 }
 
@@ -53,10 +73,45 @@ body {
     height: 100%;
 }
 
-
-
-
 /* Navbar */
 #navbar {
-    background-color: ;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+    background-color: var(--bg-non-body);
+    color: var(--text-dark-bg);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbarLogo {
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbarLinks {
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: fit-content;
+    max-height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    font-size: 25px;
+
+    list-style-type: none;
+}
+#navbarLinks li:hover {
+    cursor: pointer;
 }
