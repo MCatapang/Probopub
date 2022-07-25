@@ -5,9 +5,9 @@ const Navbar = (props) => {
     const navigate = useNavigate()
 
     return (
-        <div className='m-0 p-0 flex flex-row justify-between bg-custom-bg-non-body'>
-            <h1 className='text-3xl'>Probopub</h1>
-            <ul>
+        <div id="navbar">
+            <h1 id="navbarLogo">Probopub</h1>
+            <ul id="navbarLinks">
                 <li onClick={() => navigate('/login')}>Login</li>
                 <li onClick={() => navigate('/register')}>Register</li>
             </ul>
