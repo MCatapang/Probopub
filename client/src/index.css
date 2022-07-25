@@ -2,15 +2,16 @@
 
 /* Color Palette */
 :root {
-    --bg-body: #6f6866;
-    --bg-non-body: #38302e;
-    --bg-panel: #ccdad1;
-    --bg-panel-header: #788585;
+    --bg-body: #BFEDD9;
+    --bg-non-body: #64B996;
+    --bg-panel: #BDD5AF;
+    --bg-panel-header: #4B6B38;
 
-    --text-dark-bg: #ffffff;
-    --text-light-bg: #ccdad1;
+    --text-gen: #191710;
+    --text-header: #EFFBF6;
+    --text-link: #ADEEE3;
 
-    --hover-shadow: #9caea9;
+    --hover-shadow: #191710;
 }
 
 /* General */
@@ -19,4 +20,21 @@ body {
     padding: 0px;
     width: 100%;
     height: 100%;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 200px;
+
+    background-color: var(--bg-non-body);
+}
+#navbar h1 {
+    margin: 0px;
+    padding: 0px;
+    width: min-content;
+    height: min-content;
 }

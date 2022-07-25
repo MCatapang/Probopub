@@ -12,7 +12,6 @@
 - Axios
 - Mongoose
 - CORS
-- Tailwind CSS
 - [Courtlistener API](https://www.courtlistener.com/api/rest/v3/)
 
 ## Updates
