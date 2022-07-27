@@ -3,7 +3,7 @@
 
 /* Color Palette */
 :root {
-    --bg-body: #e4e4e4;
+    --bg-body: #202020;
     --bg-non-body: #0d0d0d;
     --bg-panel-header: #F29500;
     --bg-panel: #FFD993ff;
@@ -21,6 +21,7 @@
     --text-link: #FAA68E;
     --text-link-hover: #fdfdff;
     --text-link-underline: #fdfdff;
+    --text-shadow: #0d0d0d;
 }
 
 
@@ -29,6 +30,7 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100%;
+    min-width: 1024px;
     height: 100%;
 
     background-color: var(--bg-body);
@@ -75,11 +77,13 @@ a:hover, a:focus, a:active {
     align-items: center;
 
     z-index: 1;
+    position: sticky;
+    top: 0;
     border-bottom-style: inset;
     border-color: var(--border-light);
 }
 #navbar > * {
-    z-index: 1;
+    z-index: 2;
 }
 #navbar h1:hover {
     transition: 0.40s;
@@ -110,6 +114,7 @@ a:hover, a:focus, a:active {
 #navbarHeader {
     margin: 0px 0px 0px 20px;
     width: 330px;
+    min-width: 330px;
 
     display: flex;
     justify-content: space-between;
@@ -121,6 +126,7 @@ a:hover, a:focus, a:active {
     cursor: pointer;
 }
 #navbarHeader img {
+    margin-left: 10px;
     width: 60px;
 
     filter: 
@@ -153,4 +159,43 @@ a:hover, a:focus, a:active {
 #navbarLinks li:hover {
     color: var(--text-link-hover);
     background-color: var(--bg-hover);
+}
+
+
+/* Content */
+.content {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+.homeBanner {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 800px;
+
+    background: 
+        url(https://upload.wikimedia.org/wikipedia/commons/e/ea/-law-office.jpg),
+        linear-gradient(100deg, #0d0d0d99 40%, transparent 70%);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right 100px;
+
+    display: flex;
+    align-items: center;
+}
+.homeBanner h1 {
+    margin: 0px 40px;
+    padding: 0px;
+    width: fit-content;
+    height: 600px;
+
+    color: var(--text-header);
+
+    font-size: 200px;
+    line-height: 180px;
+    text-shadow: 20px 20px 30px var(--text-shadow);
 }
